@@ -1,7 +1,10 @@
 library(shiny)
 library(bslib)
-library(tidyverse)
+library(dplyr)
+library(readr)
+library(lubridate)
 library(ggplot2)
+library(scales)
 
 # ---- Load & clean data ----
 sales <- read_csv("data/Chocolate_Sales.csv", show_col_types = FALSE)
