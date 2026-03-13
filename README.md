@@ -43,7 +43,7 @@ rsconnect::writeManifest()
 
 The app is deployed on Posit Connect Cloud.
 
-🔗 **Live app:** *(Add your deployed URL here and in the repo About section)*
+🔗 **Live app:** https://connect.posit.cloud/daisy-littlemonster/content/019ce988-a69a-df89-053f-873ba813d216
 
 ## Repository Setup (from scratch)
 
