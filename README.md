@@ -15,7 +15,7 @@ The dashboard uses the [Chocolate Sales](https://www.kaggle.com/datasets/atharva
 
 ### Install packages
 
-Open an R console and run:
+Open an R console (type 'R' in the terminal and enter) and run:
 
 ``` r
 install.packages(c("shiny", "bslib", "tidyverse", "ggplot2", "scales", "rsconnect"))
