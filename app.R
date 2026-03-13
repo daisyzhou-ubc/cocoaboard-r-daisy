@@ -10,7 +10,7 @@ sales <- read_csv("data/Chocolate_Sales.csv", show_col_types = FALSE)
 sales <- sales |>
   mutate(
     Amount = as.numeric(gsub("[\\$,]", "", Amount)),
-    Date = as.Date(Date, format = "%d-%b-%y")
+    Date = as.Date(Date, format = "%d/%m/%Y")
   ) |>
   rename(
     sales_person = `Sales Person`,
@@ -23,8 +23,15 @@ sales <- sales |>
 
 # ---- UI ----
 ui <- page_sidebar(
-  theme = bs_theme(bootswatch = "flatly"),
-  title = "CocoaBoard (R)",
+  theme = bs_theme(
+    bg = "#FFF8F0",
+    fg = "#3E2723",
+    primary = "#5D4037",
+    info = "#795548",
+    base_font = font_google("Open Sans")
+  ),
+  title = "Chocolate Sales Dashboard",
+  bg = "#FFF8F0",
 
   sidebar = sidebar(
     title = "Filters",
